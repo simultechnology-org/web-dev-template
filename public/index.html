@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta charset="UTF-8">
   <title>Title</title>
+  <!--<script charset="UTF-8" src="//api.e-map.ne.jp/jsapi.cgi?key=44nfZKAVjcxyKFet5eATWx6zTCrxwzTjrtWS4ZWs9z0foBi36eWtdeArWx15SIXtCPFaZcBiAhodb5EvoNcmEGYhFLT3&ver=S1.0&enc=UTF8&force=1&api=zdccommon.js,zdcmap.js&opt=yamato01" type="text/javascript"></script>-->
+  <script charset="UTF-8" type="text/javascript" src="https://api.e-map.ne.jp/jsapi.cgi?key=33nf8KARjcxyKietCeASWxyzT7rxhzTqrteS4lWsNz0CoBA3HBY6dmSyYtvSENX7hjJD&ver=1.11&enc=UTF8&force=1&api=zdccommon.js,zdcmap.js,zdcshape.js,zdcroute.js,zdcproute.js,zdcmapgeometric.js"></script>
+
+  <script src="index.bundle.js"></script>
+  <script type="text/javascript">
+
+    function loadMap() {
+      const app = new App;
+      app.load();
+    }
+
+  </script>
 </head>
-<body>
+<body onload="loadMap()">
+<h3>フリースクロール地図を表示する</h3>
+<div id="Map" style="position:absolute; top: 0; right: 0; bottom: 0; left:0;"></div>
 
 </body>
 </html>
+
